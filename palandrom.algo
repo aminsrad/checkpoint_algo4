@@ -1,0 +1,13 @@
+FUNCTION palandrome(word) : BOOLEAN
+VAR
+    l:=word.length
+    i:=0 INTEGER
+BEGIN
+    FOR i FROM 0 TO l/2 STEP 1  DO
+        IF (word[i]!=word[l-1-i]) THEN
+            RETURN false
+        END_IF
+        i++
+    END_FOR
+    RETURN true ;
+END
